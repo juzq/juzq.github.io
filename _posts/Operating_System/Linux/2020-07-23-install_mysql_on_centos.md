@@ -1,6 +1,6 @@
 ---
 title: CentOS系统安装MySQL
-cagegories: [Linux]
+categories: [Linux]
 tags: [Linux, Database]
 ---
 
