@@ -1,5 +1,5 @@
 ---
-title: CentOS用Yum安装MySQL
+title: CentOS系统安装MySQL
 cagegories: [Linux]
 tags: [Linux, Database]
 ---
