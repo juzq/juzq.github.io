@@ -1,6 +1,6 @@
 ---
-title: Linux-Shell之Bash
-categories: [Programming]
+title: Linux-Shell之Bash语法
+categories: [Programming, Bash]
 tags: [linux, shell, bash]
 ---
 
@@ -12,7 +12,7 @@ tags: [linux, shell, bash]
 * `$?`：上一个函数调用的返回值
 
 ### 定义变量(变量赋值)
-```
+```bash
 variable="xxx"
 ```
 > 注：= 左右不能有空格
@@ -46,7 +46,7 @@ variable="xxx"
 * 不相等：`!=`
 
 ### if语句
-```
+```bash
 if [ <condition> ]; then
     <statement>
 fi
@@ -57,7 +57,7 @@ fi
 > 3. ;和then之间可空格可以省略
 
 ### if-else语句
-```
+```bash
 if [ <condition> ]; then
     <statement>
 else
@@ -66,7 +66,7 @@ fi
 ```
 
 ### if-elseif 语句
-```
+```bash
 if [ <condition> ]; then
     <statement>
 elif [ <condition> ]; then
@@ -77,14 +77,14 @@ fi
 ## 循环
 
 ### for数组循环
-```
+```bash
 for param in $array; do
     <statement>
 done
 ```
 
 ### for条件循环
-```
+```bash
 for (( i = 0 ; i < <variable> ; i++ )); do
     <statement>
 done
@@ -92,7 +92,7 @@ done
 ```
 
 ### while循环
-```
+```bash
 while :
 do
     <statement>
@@ -102,8 +102,8 @@ done
 ## 函数
 
 ### 定义函数
-```
+```bash
 name(){
-    xxx
+    <statement>
 }
 ```
