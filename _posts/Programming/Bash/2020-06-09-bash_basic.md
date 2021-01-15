@@ -1,7 +1,7 @@
 ---
 title: Linux-Shell之Bash语法
-categories: [Programming, Bash]
-tags: [linux, shell, bash]
+categories: [Programming, Shell]
+tags: [Linux, Shell]
 ---
 
 ## 变量
