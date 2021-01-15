@@ -2,6 +2,7 @@
 title: 点与距离
 categories: [Math]
 tags: [Math]
+math: true
 ---
 
 ## 平面距离
