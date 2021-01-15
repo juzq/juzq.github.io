@@ -1,7 +1,7 @@
 ---
 title: Linux系统添加新硬盘
 categories: [Linux]
-tags: [linux, hardware]
+tags: [Linux, Hardware]
 ---
 
 **本文所有操作都需要root来执行**
