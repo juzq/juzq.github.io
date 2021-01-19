@@ -43,6 +43,12 @@ ubuntu-drivers devices
 sudo ubuntu-drivers autoinstall
 ```
 
+### 解决vi编辑器中箭头变ABCD
+更新vi：`sudo apt install vim -y`
+
+### 安装CUDA
+[官网教程](https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&target_distro=Ubuntu&target_version=1804&target_type=debnetwork)
+
 ## CentOS
 
 ### 修改yum源
