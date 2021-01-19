@@ -23,8 +23,10 @@ Jan 19 14:10:01 VM-0-11-centos systemd: Removed slice User Slice of xxx.
 
   可以将系统日志等级设置为notice，从而屏蔽上述日志。
   
-* 添加过滤器
-  1. 编辑文件`/etc/rsyslog.d/ignore-systemd-session-slice.conf`，添加`if $programname == "systemd" and ($msg contains "Starting Session" or $msg contains "Started Session" or $msg contains "Created slice" or $msg contains "Starting user-" or $msg contains "Removed Slice" or $msg contains "Stopping user-") then stop`
+* 添加过滤规则
+  1. 编辑文件`/etc/rsyslog.d/ignore-systemd-session-slice.conf`，添加以下内容：
+  ```if $programname == "systemd" and ($msg contains "Starting Session" or $msg contains "Started Session" or $msg contains "Created slice" or $msg contains "Starting user-" or $msg contains "Removed Slice" or $msg contains "Stopping user-") then stop
+  ```
   2. 重启rsyslog：`systemctl restart rsyslog`
 
-  从而过滤掉上述日志
+  从而过滤掉上述日志。
