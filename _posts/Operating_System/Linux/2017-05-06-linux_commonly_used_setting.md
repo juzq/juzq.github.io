@@ -1,7 +1,7 @@
 ---
 title: Linux常用设置
 categories: [Linux]
-tags: [linux]
+tags: [Linux]
 ---
 
 ## CentOS
@@ -15,9 +15,16 @@ Jan 19 14:10:01 VM-0-11-centos systemd: Removed slice User Slice of xxx.
 ```
 解决方案：
 
-1. systemd默认日志等级为info，修改为notice
-  命令：`systemd-analyze set-log-level notice`
+* 修改日志等级
+  systemd默认日志等级为info，修改为notice：
+
+  1. 使用命令：`systemd-analyze set-log-level notice`
+  2. 修改配置文件：`/etc/systemd/system.conf`将`LogLevel=info`修改为`LogLevel=notice`
 
   可以将系统日志等级设置为notice，从而屏蔽上述日志。
   
-2. 添加过滤器来忽略该类型日志
+* 添加过滤器
+  1. 编辑文件`/etc/rsyslog.d/ignore-systemd-session-slice.conf`，添加`if $programname == "systemd" and ($msg contains "Starting Session" or $msg contains "Started Session" or $msg contains "Created slice" or $msg contains "Starting user-" or $msg contains "Removed Slice" or $msg contains "Stopping user-") then stop`
+  2. 重启rsyslog：`systemctl restart rsyslog`
+
+  从而过滤掉上述日志
