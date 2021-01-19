@@ -4,6 +4,18 @@ categories: [Linux]
 tags: [Linux]
 ---
 
+## 通用
+
+### 文件打开数
+Linux默认的文件打开数为1024，若作为服务器机器，该设置是不够的，需要将其提高。
+
+编辑文件`/etc/security/limits.conf`，添加或修改以下内容：
+```
+* soft nofile 65535 
+* hard nofile 65535
+```
+即可将最大文件打开数修改为65535.
+
 ## CentOS
 
 ### 设置yum源为阿里云
