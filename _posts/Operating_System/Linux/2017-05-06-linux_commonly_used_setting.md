@@ -7,7 +7,11 @@ tags: [Linux]
 ## CentOS
 
 ### 设置yum源为阿里云
-摸
+Centos默认的yum源较慢，可将其更换为阿里云：
+1. 备份旧源:`mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup`
+2. 下载新的源文件:`wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo` （可将7换成6、5等等，根据系统版本而定）
+3. 下载EPEL源:`wget -O /etc/yum.repos.d/epel.repo http://mirrors.aliyun.com/repo/epel-7.repo`
+4. 重新生成缓存：`yum clean all`和`yum makecache`
 
 ### 设置系统日志等级为notice
 CentOS会每分钟记录用户slice日志到/var/log/messages中，会产生大量无用日志：
