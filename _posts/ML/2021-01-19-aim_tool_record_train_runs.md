@@ -1,7 +1,7 @@
 ---
 title: 使用aim工具来记录机器学习训练
-categories: [ML]
-tags: [ML]
+categories: [Machine_Learning]
+tags: [Machine_Learning]
 ---
 
 ## 介绍
