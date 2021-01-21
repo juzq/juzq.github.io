@@ -2,6 +2,7 @@
 title: 用LaTeX书写数学公式
 categories: [Math]
 tags: [Math]
+math: true
 ---
 
 ## 介绍
