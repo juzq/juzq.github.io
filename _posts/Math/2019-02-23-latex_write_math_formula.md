@@ -13,4 +13,12 @@ tags: [Math]
 ## LaTeX语法
 
 ### 界定符
-公式分为陈列式（displayed mathematics）和行内式（in-line mathematics），有不同的界定符。陈列式的界定符为`$$ ... $$`或`\[ ... \]`，行内式界定符为`$ ... $`或`\( ... \)`。
+公式分为陈列式（displayed mathematics）和行内式（in-line mathematics），有不同的界定符。
+* 陈列式：`$$ ... $$`或`\[ ... \]`
+  例：$$ y = ax_1 + bx_2 $$
+
+* 行内式：`$ ... $`或`\( ... \)`
+
+**注：**
+1. MathJax默认不渲染$ ... $类型，防止干扰文章中正常的$符号显示，[这里](http://docs.mathjax.org/en/latest/input/tex/delimiters.html#tex-delimiters)有详细解释。
+2. 在MarkDown中由于`\`需要转义，因此需要写成`\\( ... \\)`和`\\[ ... \\]`
