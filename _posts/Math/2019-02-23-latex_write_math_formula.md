@@ -30,3 +30,9 @@ math: true
 **注：**
 1. MathJax默认不渲染`$ ... $`类型，防止干扰文章中正常的`$`符号显示，[这里](http://docs.mathjax.org/en/latest/input/tex/delimiters.html#tex-delimiters)有详细解释。
 2. 在MarkDown中由于`\`需要转义，因此需要写成`\\( ... \\)`和`\\[ ... \\]`
+
+### 希腊字符
+|  字符   | 语法  |  字符   | 语法  |
+|  ----  | ----  |  ----  | ----  |
+|   A    |  `A`  |\\(\alpha\\)|`\alpha`|
+|   B    |  `B`  |\\(\beta\\)|`\beta`|
