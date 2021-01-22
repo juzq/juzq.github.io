@@ -32,13 +32,22 @@ math: true
 2. 在MarkDown中由于`\`需要转义，因此需要写成`\\( ... \\)`和`\\[ ... \\]`
 
 ### 希腊字符
+
 |字符（大写）|语法   |字符（小写）  | 语法    |
 |:---------|:------|:-----------|:-------|
 |A         |  `A`  |\\(\alpha\\)|`\alpha`|
 |B         |  `B`  |\\(\beta\\) |`\beta` |
 
 ### test
+
 |字符（大写）|语法   |字符（小写）  | 语法    |
 |:---------|:------|:-----------|:-------|
-|A         |  `A`  |`\alpha`    |`\alpha`|
-|B         |  `B`  |`\beta`     |`\beta` |
+|A         |  b    |c           |ddd     |
+|B         |  b    |c           |ddd     |
+
+### test2
+| Company                      | Contact          | Country |
+|:-----------------------------|:-----------------|--------:|
+| Alfreds Futterkiste          | Maria Anders     | Germany |
+| Island Trading               | Helen Bennett    | UK      |
+| Magazzini Alimentari Riuniti | Giovanni Rovelli | Italy   |
