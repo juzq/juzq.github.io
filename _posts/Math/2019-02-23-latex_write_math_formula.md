@@ -31,24 +31,40 @@ math: true
 1. MathJax默认不渲染`$ ... $`类型，防止干扰文章中正常的`$`符号显示，[这里](http://docs.mathjax.org/en/latest/input/tex/delimiters.html#tex-delimiters)有详细解释。
 2. 在MarkDown中由于`\`需要转义，因此需要写成`\\( ... \\)`和`\\[ ... \\]`
 
-### 希腊字符
 
-|字符（大写）|语法   |字符（小写）  | 语法    |
-|:---------|:------|:-----------|:-------|
-|A         |  `A`  |\\(\alpha\\)|`\alpha`|
-|B         |  `B`  |\\(\beta\\) |`\beta` |
+### 常用数学符号
 
-### test
-
-|字符（大写）|语法   |字符（小写）  | 语法    |
+|字符（大）|语法   |字符（小写）  | 语法    |
 |:---------|:------|:-----------|:-------|
 |A         |  b    |c           |ddd     |
 |B         |  b    |c           |ddd     |
 
-### test2
-| Company                      | Contact          | Country |
-|:-----------------------------|:-----------------|--------:|
-| Alfreds Futterkiste          | Maria Anders     | Germany |
-| Island Trading               | Helen Bennett    | UK      |
-| Magazzini Alimentari Riuniti | Giovanni Rovelli | Italy   |
+### 希腊字符
+
+|字符（大）     |语法      |\| |字符（小）     | 语法     |
+|:-------------:|:--------:|---|:-------------:|:------:  |
+|A              |`A`       |\| |\\(\alpha\\)   |`\alpha`  |
+|B              |`B`       |\| |\\(\beta\\)    |`\beta`   |
+|\\(\Gamma\\)   |`\Gamma`  |\| |\\(\gamma\\)   |`\gamma`  |
+|\\(\Delta\\)   |`\Delta`  |\| |\\(\delta\\)   |`\delta`  |
+|E              |`E`       |\| |\\(\epsilon\\) |`\epsilon`|
+|Z              |`Z`       |\| |\\(\zeta\\)    |`\zeta`   |
+|H              |`H`       |\| |\\(\eta\\)     |`\eta`    |
+|\\(\Theta\\)   |`\Theta`  |\| |\\(\theta\\)   |`\theta`  |
+|I              |`I`       |\| |\\(\iota\\)    |`\iota`   |
+|K              |`K`       |\| |\\(\kappa\\)   |`\kappa`  |
+|\\(\Lambda\\)  |`\Lambda` |\| |\\(\lambda\\)  |`\lambda` |
+|N              |`N`       |\| |\\(\nu\\)      |`\nu`     |
+|\\(\Xi\\)      |`\Xi`     |\| |\\(\xi\\)      |`\xi`     |
+|O              |`O`       |\| |\\(\omicron\\) |`\omicron`|
+|\\(\Pi\\)      |`\Pi`     |\| |\\(\pi\\)      |`\pi`     |
+|P              |P         |\| |\\(\rho\\)     |`\rho`    |
+|\\(\Sigma\\)   |`\Sigma`  |\| |\\(\sigma\\)   |`\sigma`  |
+|T              |T         |\| |\\(\tau\\)     |`\tau`    |
+|\\(\Upsilon\\) |`\upsilon`|\| |\\(\upsilon\\) |`\upsilon`|
+|\\(\phi\\)     |`\phi`    |\| |\\(\phi\\)     |`\phi`    |
+|X              |X         |\| |\\(\chi\\)     |`\chi`    |
+|\\(\Psi\\)     |`\Psi`    |\| |\\(\psi\\)     |`\psi`    |
+|\\(\Omega\\)   |`\Omega`  |\| |\\(\omega\\)   |`\omega`  |
+
 
