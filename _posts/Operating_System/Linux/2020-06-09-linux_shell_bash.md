@@ -1,15 +1,10 @@
 ---
-title: Linux-Shell之Bash语法
-categories: [Programming, Shell]
+title: Linux Shell——Bash
+categories: [Operation_System, Shell]
 tags: [Linux, Shell]
 ---
 
 ## 变量
-### 获取输入变量
-* `$@`：所有变量的列表，以空格隔开
-* `$#`: 变量个数
-* `$1`: 第一个变量，`$2, $3`以此类推
-* `$?`：上一个函数调用的返回值
 
 ### 定义变量(变量赋值)
 ```bash
@@ -17,8 +12,14 @@ variable="xxx"
 ```
 > 注：= 左右不能有空格
 
-### 获取变量值
+### 取变量值
 `echo $variable`
+
+### 取输入变量
+* `$@`：所有变量的列表，以空格隔开
+* `$#`: 变量个数
+* `$1`: 第一个变量，`$2, $3`以此类推
+* `$?`：上一个函数调用的返回值
 
 ## 数组
 ### 定义数组
