@@ -1,6 +1,6 @@
 ---
 title: Jekyll搭建个人博客
-categories: [Other]
+categories: [_Other]
 tags: [Jekyll]
 ---
 

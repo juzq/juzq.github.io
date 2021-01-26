@@ -1,6 +1,6 @@
 ---
 title: Linux常用设置
-categories: [Linux]
+categories: [Operation_System, Linux]
 tags: [Linux]
 ---
 

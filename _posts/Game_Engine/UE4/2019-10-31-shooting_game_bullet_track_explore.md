@@ -1,6 +1,6 @@
 ---
 title: 射击游戏中准心与子弹弹道的探索
-categories: [Game_Engine, UE4]
+categories: [_Game_Engine, UE4]
 tags: [UE4]
 image: https://gitee.com/juzzi/res/raw/master/pic/2019/10/shoot-game-bullet-track/1.png
 ---

@@ -1,6 +1,6 @@
 ---
 title: 普通用户使用sudo获取部分root权限
-categories: [Linux]
+categories: [Operation_System, Linux]
 tags: [Linux]
 ---
 

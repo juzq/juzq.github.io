@@ -1,6 +1,6 @@
 ---
 title: Linux系统操作——SSH私钥登陆
-categories: [Linux]
+categories: [Operation_System, Linux]
 tags: [Linux]
 ---
 

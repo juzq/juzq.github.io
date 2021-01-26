@@ -1,6 +1,6 @@
 ---
 title: Linux系统添加新硬盘
-categories: [Linux]
+categories: [Operation_System, Linux]
 tags: [Linux, Hardware]
 ---
 
