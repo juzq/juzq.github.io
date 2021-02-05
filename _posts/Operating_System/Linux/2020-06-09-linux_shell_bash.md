@@ -1,6 +1,6 @@
 ---
 title: Linux Shell——Bash
-categories: [Operation_System, Shell]
+categories: [Operation_System, Linux]
 tags: [Linux, Shell]
 ---
 
@@ -33,6 +33,9 @@ variable="xxx"
 `${#array[*]}`或`${#array[@]}`
 
 ## 条件
+语法：`x <con> y`
+  
+条件判断符<con>与两边对象x, y之间的空格可以省略，即`x<con>y`。
 
 ### 数字条件判断
 * 等于：`-eq`
@@ -46,6 +49,8 @@ variable="xxx"
 * 相等：`=`或`==`
 * 不相等：`!=`
 
+注：字符串为变量时，需要用引号引起来，例如：`"$str" == "success"`
+
 ### if语句
 ```bash
 if [ <condition> ]; then
@@ -54,8 +59,8 @@ fi
 ```
 > 注：
 > 1. if和[ ]之间必须要空格。
-> 2. [ ]和xxx之间必须要空格
-> 3. ;和then之间可空格可以省略
+> 2. [ ]和<condition>之间必须要空格。
+> 3. ;和then之间可空格可以省略。
 
 ### if-else语句
 ```bash
