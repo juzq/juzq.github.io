@@ -11,7 +11,7 @@
 
   分为Value-Based（基于价值）和Policy-Based（基于策略）。
   
-  Value-Based是基于求解值函数，当值函数最优时，可以获得最优策略，即在状态s下，最大动作价值函数（q）对应的动作。而Policy-Based是将策略参数化，寻找最优的参数\\(\theta\\)，使得累计回报的期望E最大。
+  Value-Based是基于求解值函数，当值函数最优时，可以获得最优策略，即在状态s下，最大动作价值函数（q）对应的动作。而Policy-Based是将策略参数化，寻找最优的参数\\(\theta\\)，使得累计回报的期望E最大。而AC系算法会将两者结合，A为Policy-Based，C为Value-Based。
   
   区别：
   1. Value-Based只能处理动作为离散的情况。
@@ -20,11 +20,13 @@
 
   分为Episode-Update（回合更新）和Step-Update（单步更新）。
   
+  Q-Learning系列都是单步更新，Policy-Gradient和Monte-Carlo是回合更新。
+  
 * 按学习方式
 
   分为On-Policy（在线策略）和Off-Policy（离线策略），也有书将其翻译为同轨策略和离轨策略（俞凯翻译的《强化学习第2版》）。
   
-  关键点在于，搜集数据的（行动）策略与要学习的（目标）策略是否为同一个，若是同一个则是On-Policy，若不是，则是Off-Policy。
+  关键点在于，搜集数据的（行动）策略与要学习的（目标）策略是否为同一个，若是同一个则是On-Policy，若不是，则是Off-Policy。例如，Sarsa是On-Policy，而Q-Learning是Off-Policy。
   
   
 
