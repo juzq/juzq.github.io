@@ -1,7 +1,7 @@
 ---
 title: Windows下安装多个MySQL数据库
-categories: [Operation_System, Windows]
-tags: [Windows, Database, MySQL]
+categories: [Development, Database]
+tags: [Database, MySQL]
 ---
 
 ## 安装mysql
