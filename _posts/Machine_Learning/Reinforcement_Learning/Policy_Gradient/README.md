@@ -1,5 +1,9 @@
 ## 策略梯度
-策略梯度（Policy Gradient）分为随机策略梯度（Stochastic PG）和确定性策略梯度（Deterministic PG）。
+策略梯度（Policy Gradient）的关键思想是提高获得高回报的动作的概率，降低获得低回报的动作的概率。
+
+PG是基于策略的算法，既可用于离散动作空间，也可用于连续动作空间。
+
+PG分为随机策略梯度（Stochastic PG）和确定性策略梯度（Deterministic PG）。
 
 ### 随机策略梯度
 置信域策略优化（True Region Policy Optimization）：确定一个使得回报函数单调不减的最优步长，以应对SPG学习速率难以确定的问题。
