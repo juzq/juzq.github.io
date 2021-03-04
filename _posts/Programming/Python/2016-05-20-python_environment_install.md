@@ -79,7 +79,9 @@ fi
 
 ## Jupyter Notebook
 
-* 启动：`jupyter notebook --ip=<ip> --port=<port> --no-browser`
+* 启动：`jupyter notebook --ip=0.0.0.0 --port=<port> --no-browser`
+
+* 后台运行：`nohup jupyter notebook --ip=0.0.0.0 --port=<port> --no-browser &`
 
 * 查看：`jupyter notebook list`
 
@@ -88,20 +90,19 @@ fi
 * 设置访问密码：`jupyter notebook password`
 
 * 安装扩展
+  ```
+  pip install jupyter_nbextensions_configurator jupyter_contrib_nbextensions
 
-```
-pip install jupyter_nbextensions_configurator jupyter_contrib_nbextensions
+  jupyter contrib nbextension install --user
 
-jupyter contrib nbextension install --user
-
-jupyter nbextensions_configurator enable --user
-```
+  jupyter nbextensions_configurator enable --user
+  ```
 
 ### 常用扩展
 Edit-nbextensions config
-* ExecuteTime: 执行时间
 * Codefolding：代码折叠
 * Comment/Uncomment Hotkey：注释快捷键
+* ExecuteTime: 执行时间
 * Highlight selected word：已选文字高亮
 * Hinterland：代码提示
 * isort formatter：isort格式化imports
