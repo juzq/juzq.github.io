@@ -6,6 +6,12 @@ tags: [Linux]
 
 ## 通用
 
+### history记录命令时间
+编辑文件`/etc/profile`：
+* 记录日期：`export HISTTIMEFORMAT='%F %T '`
+
+生效文件：`source /etc/profile`
+
 ### 文件打开数
 Linux默认的文件打开数为1024，若作为服务器机器，该设置是不够的，需要将其提高。
 
