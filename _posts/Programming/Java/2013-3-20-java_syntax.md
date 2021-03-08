@@ -4,6 +4,11 @@ categories: [Programming, Java]
 tags: [Java]
 ---
 
+## 关键字
+
+### transient
+若类实现了Serilizable接口，那么该类的对象就可以被序列化。如果想要排除该类的某个字段，就可以给该字段加上transient关键字，该字段就不会被序列化（ObjectOutputStream）。需要注意的是，transient只能修饰类字段，不能修饰类和方法，也不能修饰方法的中间字段。另外，静态字段无论加不加transient都无法被序列化，因为静态字段属于类，不属于对象。
+
 ## 运算符
 
 ### 位运算符
