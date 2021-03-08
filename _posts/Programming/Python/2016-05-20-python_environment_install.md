@@ -104,7 +104,38 @@ Edit-nbextensions config
 * Comment/Uncomment Hotkey：注释快捷键
 * ExecuteTime: 执行时间
 * Highlight selected word：已选文字高亮
-* Hinterland：代码提示
+* Hinterland：代码自动补全
+  
+  注：Hinterland只与ipython7.20+兼容，若不满足会有如下报错
+  ```python
+[IPKernelApp] ERROR | Exception in message handler:
+Traceback (most recent call last):
+  File "/home/ljx/miniconda3/envs/py382/lib/python3.8/site-packages/ipykernel/kernelbase.py", line 265, in dispatch_shell
+    yield gen.maybe_future(handler(stream, idents, msg))
+  File "/home/ljx/miniconda3/envs/py382/lib/python3.8/site-packages/tornado/gen.py", line 762, in run
+    value = future.result()
+  File "/home/ljx/miniconda3/envs/py382/lib/python3.8/site-packages/tornado/gen.py", line 234, in wrapper
+    yielded = ctx_run(next, result)
+  File "/home/ljx/miniconda3/envs/py382/lib/python3.8/site-packages/ipykernel/kernelbase.py", line 580, in complete_request
+    matches = yield gen.maybe_future(self.do_complete(code, cursor_pos))
+  File "/home/ljx/miniconda3/envs/py382/lib/python3.8/site-packages/ipykernel/ipkernel.py", line 356, in do_complete
+    return self._experimental_do_complete(code, cursor_pos)
+  File "/home/ljx/miniconda3/envs/py382/lib/python3.8/site-packages/ipykernel/ipkernel.py", line 381, in _experimental_do_complete
+    completions = list(_rectify_completions(code, raw_completions))
+  File "/home/ljx/miniconda3/envs/py382/lib/python3.8/site-packages/IPython/core/completer.py", line 484, in rectify_completions
+    completions = list(completions)
+  File "/home/ljx/miniconda3/envs/py382/lib/python3.8/site-packages/IPython/core/completer.py", line 1818, in completions
+    for c in self._completions(text, offset, _timeout=self.jedi_compute_type_timeout/1000):
+  File "/home/ljx/miniconda3/envs/py382/lib/python3.8/site-packages/IPython/core/completer.py", line 1861, in _completions
+    matched_text, matches, matches_origin, jedi_matches = self._complete(
+  File "/home/ljx/miniconda3/envs/py382/lib/python3.8/site-packages/IPython/core/completer.py", line 2029, in _complete
+    completions = self._jedi_matches(
+  File "/home/ljx/miniconda3/envs/py382/lib/python3.8/site-packages/IPython/core/completer.py", line 1373, in _jedi_matches
+    interpreter = jedi.Interpreter(
+  File "/home/ljx/miniconda3/envs/py382/lib/python3.8/site-packages/jedi/api/__init__.py", line 725, in __init__
+    super().__init__(code, environment=environment,
+TypeError: __init__() got an unexpected keyword argument 'column'
+  ```
 * isort formatter：isort格式化imports
 * Live Markdown Preview：动态Markdown预览
 * Snippets Menu：代码片段菜单
