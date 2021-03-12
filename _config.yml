@@ -36,18 +36,17 @@ github:
   username: juzq             # change to your github username
 
 twitter:
-  username: emberd            # change to your twitter username
+  username: juzi            # change to your twitter username
 
 social:
   name: JuZi                  # it will shows as the copyright owner in Footer
   email: ipif@163.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/emberd      # change to your twitter homepage
     - https://github.com/juzq       # change to your github homepage
-    # Uncomment below to add more social links
-    - https://www.facebook.com/emberd
-    - https://www.linkedin.com/in/emberd
+    - https://twitter.com/juzi      # change to your twitter homepage
+    - https://www.facebook.com/juzi
+    - https://www.linkedin.com/in/juzi
 
 google_site_verification: google_meta_tag_verification # change to your verification string
 # --------------------------
