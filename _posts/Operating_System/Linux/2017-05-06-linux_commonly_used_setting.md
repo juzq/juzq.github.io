@@ -30,34 +30,6 @@ Ubuntu默认的apt源较慢，可将其更换为阿里云apt源：
 2. 新建文件/etc/apt/sources.list，并添加[阿里云apt](https://developer.aliyun.com/mirror/ubuntu)与系统版本匹配的内容
 3. 更新apt缓存：`sudo apt update`
 
-### 更新软件
-`sudo apt upgrade -y`
-
-### 模糊查找软件
-`apt list *<keyword>*`
-
-其中*代表任意字符，例：`apt list *openjdk-11*`
-
-### 删除软件
-`sudo apt remove <software>`
-
-该命令只能删除软件的可执行文件，在命令`dpkg -l|grep <keyword>`中还能看到，需要再使用`sudo dpkg -P <software>`才能将其完全删除（删除配置文件）。
-
-### 安装sshd
-```
-sudo apt install openssh-server
-service ssh start
-```
-
-### 查看显卡驱动
-```
-ubuntu-drivers devices
-```
-
-### 安装驱动
-```
-sudo ubuntu-drivers autoinstall
-```
 
 ### 解决vi编辑器中箭头变ABCD
 更新vi：`sudo apt install vim -y`
