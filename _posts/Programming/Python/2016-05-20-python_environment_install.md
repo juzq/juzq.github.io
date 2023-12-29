@@ -44,6 +44,7 @@ fi
   2. 根据安装向导指示安装
   3. 将conda目录`C:\Users\%User%\miniconda3\condabin`加入到环境变量，将%User%替换为实际用户名。
   4. 如果要在powershell中使用conda，需要执行命令：`conda init powershell`
+  5. 如果powshell报错：`无法加载文件xxx，因为在此系统上禁止运行脚本`，则需要用管理员身份运行命令：`set-executionpolicy remotesigned`
 
 安装完成后，conda会在控制台开启时自动激活conda环境，如果想要不自动激活，可以执行命令：`conda config --set auto_activate_base false`
 
@@ -54,8 +55,7 @@ fi
 
 ### Conda常用命令
 * 查看env列表：`conda env list`
-* 禁止conda自动激活：`conda config --set auto_activate_base false`
-* sss:xxx
+* 切换env：`conda activate py38`
 
 ## Pip相关命令
 

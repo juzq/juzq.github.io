@@ -25,12 +25,19 @@ while <condition>:
     <statement>
 ```
 
-### 集合循环
+## 遍历
+### 集合遍历
 ```
 for <variable> in <collection>:
     <statement>
 ```
 
+### 步长遍历
+```python
+for i in range(x, y):
+    ...
+```
+i包含x，不包含y
 ## 集合
 
 ### list
