@@ -72,11 +72,11 @@ Markdown 支持两种形式的链接语法：行内式和参考式两种形式�
 1. 行内式<br>
 * 要建立一个行内式的链接，只要在方块括号后面紧接着圆括号并插入网址链接即可，如果你还想要加上链接的 title 文字，只要在网址后面，用双引号把 title 文字包起来即可，例如：
 ```
-[My Blog1](http://icoding.pw/ "This link is my blog.")
-[My Blog2](http://icoding.pw/)
+[My Blog1](https://icoding.pw/ "This link is my blog.")
+[My Blog2](https://icoding.pw/)
 ```
-[My Blog1](http://icoding.pw/ "This link is my blog.") |
-[My Blog2](http://icoding.pw/) 
+[My Blog1](https://icoding.pw/ "This link is my blog.") |
+[My Blog2](https://icoding.pw/) 
 鼠标放在链接上，你就会发现不同。xD<br>
 * 如果你是要链接到同样主机的资源，你可以使用相对路径：<br>
 `[这里](/posts/markdown_introduce_and_syntax/)也是这篇文章的地址`<br>
@@ -86,16 +86,16 @@ Markdown 支持两种形式的链接语法：行内式和参考式两种形式�
 参考式的链接是在链接文字的括号后面再接上另一个方括号，而在第二个方括号里面要填入用以辨识链接的标记：<br>
 ```
 这是[My Blog][1]的链接地址
-[1]: http://icoding.pw/  "This link is my blog."
+[1]: https://icoding.pw/  "This link is my blog."
 ```
 这是[My Blog][1]的链接地址
 
 
 3. 直接链接
-`<http://icoding.pw>是我的博客地址`
-	<http://icoding.pw>是我的博客地址
+`<https://icoding.pw>是我的博客地址`
+	<https://icoding.pw>是我的博客地址
 
-[1]: http://icoding.pw/  "This link is my blog."
+[1]: https://icoding.pw/  "This link is my blog."
 
 ### 图片
 跟行内式链接类似，只需要在最前面添加`!`符号即可，例如：
