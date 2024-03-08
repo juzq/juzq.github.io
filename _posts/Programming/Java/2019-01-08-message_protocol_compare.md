@@ -108,7 +108,7 @@ byte[] fastjsonBytes = JSON.toJSONBytes(initMsg);
 EquipInventoryInit o = JSON.parseObject(fastjsonBytes, EquipInventoryInit.class);
 ```
 ## Jsoniter
-<http://jsoniter.com/><br>
+<https://jsoniter.com/><br>
 <https://github.com/json-iterator><br><br>
 ③. 序列化
 ```

@@ -28,4 +28,4 @@ tags: [Java]
 `Run-> Edit Configurations...-> + -> Remote`
 填写Host和Port，点击Ok即可
 
-> 原文发表在我的cnblog博客：<http://www.cnblogs.com/emberd/p/4961358.html>，于2017/07/20迁入
+> 原文发表在我的cnblog博客：<https://www.cnblogs.com/emberd/p/4961358.html>，于2017/07/20迁入

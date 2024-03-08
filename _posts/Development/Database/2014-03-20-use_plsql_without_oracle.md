@@ -56,4 +56,4 @@ EXTPROC_CONNECTION_DATA =
 ```
 XCKY为Oracle目标数据库的SID名，192.168.66.8为目标数据库IP地址，1521为目标数据库端口号，根据实际情况修改。
 
-> 原文发表在我的csdn博客：<http://blog.csdn.net/emberd/article/details/21625249>，于2017/07/21迁入
+> 原文发表在我的csdn博客：<https://blog.csdn.net/emberd/article/details/21625249>，于2017/07/21迁入

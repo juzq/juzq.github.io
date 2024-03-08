@@ -104,4 +104,4 @@ tags: [Database, Cache, Redis]
 * 返回名称为key的hash中所有键对应的value：`hvals(key)`
 * 返回名称为key的hash中所有的键（field）及其对应的value：`hgetall(key)`
 
-> 原文发表在我的cnblog博客：<http://www.cnblogs.com/emberd/p/4210218.html>，于2017/07/20迁入
+> 原文发表在我的cnblog博客：<https://www.cnblogs.com/emberd/p/4210218.html>，于2017/07/20迁入

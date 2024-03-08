@@ -4,7 +4,7 @@ categories: [Programming, Java]
 tags: [Java, Eclipse]
 ---
 
-从Eclipse官方网站下载的Eclipse默认为英文版本，如需要将其转化为中文版本，需要安装多国语言插件，官方下载地址为：<http://www.eclipse.org/babel/downloads.php>。我搜集了一些资料，有多种安装方法。现总结如下：
+从Eclipse官方网站下载的Eclipse默认为英文版本，如需要将其转化为中文版本，需要安装多国语言插件，官方下载地址为：<https://www.eclipse.org/babel/downloads.php>。我搜集了一些资料，有多种安装方法。现总结如下：
 * 方法一：Links方法（推荐）
 
   步骤：
@@ -24,4 +24,4 @@ tags: [Java, Eclipse]
 1. 解压下载后压缩包，将eclipse文件夹里的内容覆盖到eclipse安装目录，如D:/eclipse。
 2. 重启Eclipse。
 
-> 原文发表在我的csdn博客：<http://blog.csdn.net/emberd/article/details/8890950>，于2017/07/21迁入
+> 原文发表在我的csdn博客：<https://blog.csdn.net/emberd/article/details/8890950>，于2017/07/21迁入

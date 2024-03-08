@@ -45,4 +45,4 @@ tags: [Database, Oracle]
   6. 查看数据文件：
 `select name from v$datafile;`
 
-> 原文发表在我的csdn博客：<http://blog.csdn.net/emberd/article/details/19480157>，于2017/07/21迁入
+> 原文发表在我的csdn博客：<https://blog.csdn.net/emberd/article/details/19480157>，于2017/07/21迁入

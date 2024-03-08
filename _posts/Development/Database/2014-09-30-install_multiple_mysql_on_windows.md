@@ -35,4 +35,4 @@ port=3306
 2. 安装命令
 ```mysqld install MySQL2  --defaults-file="C:\Program Files (x86)\MySQL2\MySQL Server 5.1\my.ini"```
 
-> 原文发表在我的csdn博客：<http://blog.csdn.net/emberd/article/details/39694663>，于2017/07/21迁入
+> 原文发表在我的csdn博客：<https://blog.csdn.net/emberd/article/details/39694663>，于2017/07/21迁入
