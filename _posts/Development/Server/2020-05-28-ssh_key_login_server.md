@@ -31,6 +31,34 @@ AuthorizedKeysFile .ssh/authorized_keys
 
 <https://www.freebsd.org/cgi/man.cgi?sshd_config(5)>
 
+### 服务器host key变化导致连接失败
+若服务器重装了系统，或者有硬件变化，则可能会导致host key变化，此时客户端通过ssh连接时会出现如下报错：
+```
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@       WARNING: POSSIBLE DNS SPOOFING DETECTED!          @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+The RSA host key for [xxx.com]:57522 has changed,
+and the key for the corresponding IP address [172.26.101.72]:57522
+is unknown. This could either mean that
+DNS SPOOFING is happening or the IP address for the host
+and its host key have changed at the same time.
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the RSA key sent by the remote host is
+SHA256:du3fKBQRb+udLRzrYt3tVISqL9reYPC2jd4F6klP9Tc.
+Please contact your system administrator.
+Add correct host key in C:\\Users\\xxx/.ssh/known_hosts to get rid of this message.
+Offending ECDSA key in C:\\Users\\xxx/.ssh/known_hosts:2
+RSA host key for [xxx.com]:57522 has changed and you have requested strict checking.
+Host key verification failed.
+```
+解决方法：去.ssh/known_hosts下删除服务器对应的host key或者执行如下命令：
+`ssh-keygen -R [xxx.com]:57522`
+
 ## 连接GitHub
 1. 登录[GitHub](https://github.com/)。
 2. 点右上角的头像，选择`Settings`。

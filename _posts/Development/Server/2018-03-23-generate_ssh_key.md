@@ -41,4 +41,5 @@ Enter file in which to save the key (/c/Users/user/.ssh/id_ed25519):
 文件会出现在第3步中指定的位置，xxx.pub为公钥，存放在服务器上；xxx为私钥，存放在自己电脑上，可以连接有对应公钥的服务器。
 
 > 参考：<https://docs.github.com/zh/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent>
+
 > 参考：<https://docs.gitlab.com/ee/user/ssh.html#generate-an-ssh-key-pair>
